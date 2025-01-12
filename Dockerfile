@@ -1,5 +1,5 @@
 # Use a lightweight Go image
-FROM golang:1.20-alpine as builder
+FROM golang:1.23-alpine as builder
 
 # Set the working directory
 WORKDIR /app
@@ -23,7 +23,7 @@ FROM alpine:latest
 WORKDIR /app
 
 # Copy the built application from the builder
-COPY --from=builder /app/app .
+COPY --from=builder /app .
 
 # Expose the port the application listens on
 EXPOSE 8080

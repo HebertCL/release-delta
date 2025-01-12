@@ -1,6 +1,6 @@
 module github.com/HebertCL/release-reporter
 
-go 1.23.4
+go 1.23
 
 require (
 	github.com/google/go-github/v68 v68.0.0
